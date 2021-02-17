@@ -98,7 +98,7 @@ public class CustomCharacterManager : MonoBehaviour
             Division.TheMilitaryPolice,
             Division.TheSurveryCorps
         };
-        skillOption = new string[7]
+        skillOption = new string[8]
         {
             "mikasa",
             "levi",
@@ -107,6 +107,7 @@ public class CustomCharacterManager : MonoBehaviour
             "marco",
             "armin",
             "petra"
+            "eren"
         };
         CostumeDataToMyID();
         freshLabel();
@@ -208,10 +209,10 @@ public class CustomCharacterManager : MonoBehaviour
         if (init)
         {
             to.stat = new HeroStat();
-            to.stat.Accel = 100;
-            to.stat.Speed = 100;
-            to.stat.Gas = 100;
-            to.stat.Blade = 100;
+            to.stat.Accel = 110;
+            to.stat.Speed = 110;
+            to.stat.Gas = 113;
+            to.stat.Blade = 110;
             to.stat.SkillId = "mikasa";
         }
         else
