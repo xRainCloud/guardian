@@ -27,8 +27,8 @@ public class TITAN_EREN : Photon.MonoBehaviour
     private bool attackChkOnce;
     private float hitPause;
     public GameObject realBody;
-    public float lifeTime = 9999f;
-    private float lifeTimeMax = 9999f;
+    public float lifeTime = 99999f;
+    private float lifeTimeMax = 99999f;
     public bool rockLift;
     private bool hasDieSteam;
     private float dieTime;
