@@ -106,7 +106,7 @@ public class CustomCharacterManager : MonoBehaviour
             "jean",
             "marco",
             "armin",
-            "petra"
+            "petra",
             "eren"
         };
         CostumeDataToMyID();
@@ -306,7 +306,7 @@ public class CustomCharacterManager : MonoBehaviour
         labelCostume.GetComponent<UILabel>().text = "costume_" + costumeId.ToString();
         labelCape.GetComponent<UILabel>().text = "cape_" + capeId.ToString();
         labelDivision.GetComponent<UILabel>().text = divisionOption[divisionId].ToString();
-        labelPOINT.GetComponent<UILabel>().text = "Points: " + (400 - calTotalPoints()).ToString();
+        labelPOINT.GetComponent<UILabel>().text = "Points: " + (450 - calTotalPoints()).ToString();
         labelSPD.GetComponent<UILabel>().text = "SPD " + setup.myCostume.stat.Speed.ToString();
         labelGAS.GetComponent<UILabel>().text = "GAS " + setup.myCostume.stat.Gas.ToString();
         labelBLA.GetComponent<UILabel>().text = "BLA " + setup.myCostume.stat.Blade.ToString();
@@ -416,7 +416,7 @@ public class CustomCharacterManager : MonoBehaviour
             character.GetComponent<CharacterCreateAnimationControl>().playAttack(setup.myCostume.stat.SkillId);
             freshLabel();
         }
-        else if (calTotalPoints() < 400)
+        else if (calTotalPoints() < 450)
         {
             setStatPoint(type, 1);
         }
@@ -473,7 +473,7 @@ public class CustomCharacterManager : MonoBehaviour
             num += setup.myCostume.stat.Blade;
             return num + setup.myCostume.stat.Accel;
         }
-        return 400;
+        return 450;
     }
 
     public void SaveData()
